@@ -1,0 +1,228 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* Grid CSS */
+
+/* Category Grid CSS */
+
+#subHeading {
+  text-align: center;
+  border-bottom: 1px solid #ccff00;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  background-color: black;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 260px 260px 260px 260px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "client 1 client 2 client 3 client 4"
+  "client 5 client 6 client 7 client 8"
+  "client 9 client 10 client 11 client 12"
+  ;
+}
+
+#client 1 {
+  grid-area: client 1;
+  background-image: url("../images/1.dashboard.client.png");
+
+}
+#client 2 {
+  grid-area: client 2;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 3 {
+  grid-area: client 3;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 4 {
+  grid-area: client 4;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 5 {
+  grid-area: client 5;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 6 {
+  grid-area: client 6;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 7 {
+  grid-area: client 7;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 8 {
+  grid-area: client 8;
+  background-image: url("../images/1.dashboard.client.png";
+}
+
+#client 9 {
+  grid-area: client 9;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 10 {
+  grid-area: client 10;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 11 {
+  grid-area: client 11;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+#client 12 {
+  grid-area: client 12;
+  background-image: url("../images/1.dashboard.client.png");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+  background-color: black;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 5px solid #ccff00;
+}
+
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Monsteratt', 'Arial Narrow', Arial, sans-serif;
+  background-color: black;
+
+}
+
+.navbar ul{
+  list-style: none;
+  background: black;
+  padding: 0;
+  margin: 0;
+  text-align: center
+}
+
+
+.navbar li{
+  display: inline-block;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  width: 100px;
+  display: block;
+  padding: 25px 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  color: #00d2ff !important;
+}
+
+.a:hover{
+  background-color: #ccff00 !important;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.navigation p {
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+}
+/* Typography CSS */
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #ccff00;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 950px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #categoryGrid {
+    grid-template-rows: 260px 260px 260px 260px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "client 1"
+      "client 2"
+      "client 3"
+      "client 4"
+      "client 5"
+      "client 6"
+      "client 7"
+      "client 8"
+      "client 9"
+      "client 10"
+      "client 11"
+      "client 12"
+    ;
+  }
+}
